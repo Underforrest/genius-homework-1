@@ -1,0 +1,217 @@
+/* Fonts */
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-latin-700.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v32-latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v32-latin-500.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v32-latin-700.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/roboto-condensed-v27-latin-600.woff2') format('woff2');
+}
+/* Colors */
+:root {
+  --color-primary-brand-white: #ffffff;
+  --color-primart-brand-blue-light: #2b7fff;
+  --color-primary-brand-blue-dark: #011c44;
+  --color-secondary-brand-grey-light: #747272;
+  --color-secondary-brand-grey-dark: #4a4a4a;
+  --color-secondary-brand-blue-dark: #011f4a;
+  --color-secondary-brand-yellow: #ffd02b;
+}
+/* General setting */
+body {
+  color: var(--color-primary-brand-blue-dark);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+ul {
+  list-style-type: none;
+}
+/* Header */
+.menu-link {
+  color: var(--color-primary-brand-blue-dark);
+  text-decoration: none;
+}
+.menu-link:hover {
+  color: var(--color-primart-brand-blue-light);
+  font-weight: 700;
+}
+/* Section title */
+/* Main section */
+.main-title {
+  color: var(--color-primart-brand-blue-light);
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 0.8;
+}
+
+.button {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--color-primart-brand-blue-light);
+  color: var(--color-primary-brand-white);
+  border: 2px solid var(--color-primart-brand-blue-light);
+  font-size: 18px;
+  font-weight: 500; /* font-weigh must be 600, but Roboto font don't have that weight in google fonts */
+  padding: 16px 32px;
+  line-height: 1.2;
+  border-radius: 32px;
+}
+.button:hover {
+  background-color: transparent;
+  color: var(--color-primary-brand-blue-dark);
+}
+.main-text {
+  color: var(--color-secondary-brand-grey-dark);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* About-Us-Section */
+.section-title {
+  font-family: 'Play', sans-serif;
+  font-size: 64px;
+  line-height: 1.15;
+  font-weight: 700;
+}
+.accent {
+  color: var(--color-primart-brand-blue-light);
+}
+.about-text {
+  font-size: 22px;
+  line-height: 1.7;
+}
+.about-accent {
+  font-weight: 500; /* font-weigh must be 600, but Roboto font don't have that weight in google fonts */
+}
+.alight {
+  text-align: center;
+}
+/* Why-We-Section */
+.why-text {
+  color: #000000;
+  line-height: 1.3;
+  text-align: center;
+}
+.hide1,
+.hide2,
+.hide3 {
+  display: none;
+}
+.procedures-image1:hover + .hide1,
+.procedures-image2:hover + .hide2,
+.procedures-image3:hover + .hide3 {
+  display: block;
+}
+.procedures-button {
+  background-color: var(--color-primary-brand-white);
+  width: 44px;
+  height: 44px;
+  border-radius: 44px;
+  border: 0.77px solid var(--color-primary-brand-blue-dark);
+}
+.procedures-button:hover {
+  background-color: var(--color-primart-brand-blue-light);
+  color: var(--color-primary-brand-white);
+  border: 0.77px solid var(--color-primary-brand-white);
+}
+.procedures-button-slide {
+  background-color: var(--color-secondary-brand-grey-light);
+}
+.procedures-button-slide:hover {
+  background-color: var(--color-primart-brand-blue-light);
+}
+/* Contact section */
+.contact-text {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+}
+.contact-accent {
+  color: var(--color-primart-brand-blue-light);
+}
+.contact-input {
+  background-color: transparent;
+  font-size: 13px;
+  width: 310px;
+  height: 52px;
+  border-radius: 32px;
+  text-align: centers;
+}
+.contact-input:hover {
+  background-color: var(--color-secondary-brand-grey-light);
+}
+::placeholder {
+  color: var(--color-primary-brand-white);
+}
+/* Alight placeholder input */
+/* input::-webkit-input-placeholder {
+  text-align: center;
+} */
+.content-confidential {
+  color: var(--color-secondary-brand-grey-light);
+  font-size: 12px;
+  line-height: 1.5;
+}
+.contact-map {
+  border-radius: 32px;
+}
+.footer-nav {
+  font-size: 16px;
+}
+
+.address-link {
+  font-style: normal;
+  font-size: 16px;
+}
+.address-section {
+  font-size: 16px;
+  font-style: normal;
+  text-decoration: none;
+}
+.address-secure {
+  font-size: 13px;
+}
+/* .icons-social-phone {
+  background: none;
+}
+.icons-social-phone:hover {
+  background: var(--color-primary-brand-white);
+} */
